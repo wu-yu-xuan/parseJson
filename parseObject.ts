@@ -2,8 +2,9 @@ import { strictEqual, strict } from 'assert';
 import findPair from './findPair';
 import getValidJsonString from './getValidJsonString';
 import parseValidJsonString from './parseValidJsonString';
+import { JsonObject } from './interface';
 
-export default function parseObject(input: string, position = 0): Object {
+export default function parseObject(input: string, position = 0): JsonObject {
   strictEqual(
     input[0],
     '{',
@@ -59,7 +60,7 @@ export default function parseObject(input: string, position = 0): Object {
     return parseValidJsonString(validJsonString);
   }
 
-  let result = {};
+  const result: JsonObject = {};
 
   function parseLeft() {
     left = left.trimLeft();

@@ -28,6 +28,6 @@ export default function parseValidJsonString(
       return parseArray(value, position);
     default:
       strict(false, `unexpected type: ${type}`);
+      return null;
   }
-  strict(false, 'hey, you should never reach here');
 }

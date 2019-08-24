@@ -1,8 +1,9 @@
 import parseObject from './parseObject';
+import { JsonObject } from './interface';
 
 describe('parseObject function works well', () => {
   it('parses object right', () => {
-    function testObject(obj: Object) {
+    function testObject(obj: JsonObject) {
       expect(parseObject(JSON.stringify(obj))).toStrictEqual(obj);
     }
     testObject({});

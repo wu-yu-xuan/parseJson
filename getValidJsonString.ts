@@ -58,15 +58,15 @@ export default function getValidJsonString(
     case '0':
       return {
         type: 'number',
-        value: input.match(/^([\de\-\.+]+)/)[1]
+        value: input.match(/^([\de\-\.+]+)/)![1]
       };
     default:
       strict(
         false,
         `unexpected start token in position ${position}: ${input[0]}`
       );
+      return { type: 'error', value: '' };
   }
-  strict(false, 'hey, you should never reach here');
 }
 
 function assertStart(input: string, assert: string, position = 0) {

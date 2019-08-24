@@ -51,8 +51,7 @@ export default function parseArray(input: string, position = 0): JsonArray {
 
   function parseLeft(): JsonArray {
     left = left.trimLeft();
-    const isEnd = parseEnd();
-    if (isEnd) {
+    if (parseEnd()) {
       return result;
     } else {
       parseComma();

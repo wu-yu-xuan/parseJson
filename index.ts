@@ -1,6 +1,4 @@
-import findPair from './findPair';
 import { strict, strictEqual } from 'assert';
-import parseNum from './parseNum';
 import getValidJsonString from './getValidJsonString';
 import { Json } from './interface';
 import parseValidJsonString from './parseValidJsonString';

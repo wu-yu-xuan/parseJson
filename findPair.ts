@@ -34,5 +34,5 @@ export default function findPair({
       current++;
     }
   }
-  strict(false, 'could not find the right endToken');
+  return String(strict(false, 'could not find the right endToken'));
 }

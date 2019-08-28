@@ -1,6 +1,7 @@
 # parseJson
 
-[![wtfpl badge](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://www.wtfpl.net/)
+[![wtfpl badge](https://img.shields.io/github/license/wu-yu-xuan/parseJson)](https://github.com/wu-yu-xuan/parseJson/blob/master/LICENSE)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wu-yu-xuan/parseJson)
 
 参考: [JSON 规范](https://www.json.org/)
 
